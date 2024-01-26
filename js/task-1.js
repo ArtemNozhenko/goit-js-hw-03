@@ -1,5 +1,6 @@
 function slugify(title) {
-  const totalCredits = quantity * pricePerDroid;
+  const slug = title.toLowerCase().split(' ');
+  return slug.join('-');
 }
 console.log(slugify('Arrays for begginers')); // "arrays-for-begginers"
 console.log(slugify('English for developer')); // "english-for-developer"
